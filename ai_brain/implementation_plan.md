@@ -1,33 +1,34 @@
-# Implementation Plan - Algorithm Learning Journey Setup
+# Implementation Plan - Algorithm Learning Journey Refinement
 
 ## Goal Description
-Initialize a new GitHub repository for the user's algorithm learning journey and establish a standardized folder structure, starting with "Prefix Suffix Algorithms".
+Enhance the educational value of the "Prefix Suffix Algorithms" section by providing tiered knowledge resources and industry-standard file naming for practice problems.
 
 ## User Review Required
-- GitHub authentication status needs to be verified.
-- Confirmation of specific folder paths if the workspace root is unexpected.
+- None at this stage.
 
 ## Proposed Changes
 
-### Repository Root
-#### [NEW] [README.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/README.md)
-- Introduction to the project.
+### Prefix Suffix Algorithms - Knowledge
+#### [NEW] [knowledge/level1_eli5.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level1_eli5.md)
+- "Explain Like I'm 5": Using simple analogies (like stacks of blocks or running totals) to explain the concept.
 
-### Prefix Suffix Algorithms
-#### [NEW] [knowledge/concepts.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/concepts.md)
-- Explanation of Prefix/Suffix arrays.
+#### [NEW] [knowledge/level2_intermediate.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level2_intermediate.md)
+- Standard technical explanation: Definitions, math formulas, time/space complexity analysis, and standard use cases. (Refactor of existing `concepts.md`).
 
-#### [NEW] [practice/solution.py](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/practice/solution.py)
-- Annotated Python solution for a beginner problem (e.g., Finding the Equilibrium Index or similar simple prefix sum problem).
+#### [NEW] [knowledge/level3_expert.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level3_expert.md)
+- In-depth analysis: Memory access patterns, potential for parallelization (Parallel Scan), SIMD usage, application in advanced data structures (Fenwick Trees/Segment Trees), and differences in mutable vs immutable scenarios.
 
-#### [NEW] [practice/solution.js](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/practice/solution.js)
-- Annotated JavaScript solution for the same problem.
+#### [DELETE] [knowledge/concepts.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/concepts.md)
+- Replaced by the tiered files.
+
+### Prefix Suffix Algorithms - Practice
+#### [RENAME] `solution.py` -> `find_pivot_index.py`
+- Renaming to match LeetCode #724 "Find Pivot Index".
+
+#### [RENAME] `solution.js` -> `find_pivot_index.js`
+- Renaming to match LeetCode #724.
 
 ## Verification Plan
-### Automated Tests
-- Run `git status` to verify repo initialization.
-- Run `gh repo view` to verify remote creation.
-- Check for file existence using `ls`.
-
 ### Manual Verification
-- Review generated code comments for clarity.
+- Verify file existence and content.
+- Check `ai_brain` for synced artifacts.
