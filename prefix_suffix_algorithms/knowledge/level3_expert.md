@@ -12,31 +12,13 @@ Prefix sum calculations are inherently **sequential** in their basic form ($P[i]
 While the recurrence relation looks serial, prefix sums can be parallelized using the **Hillis-Steele** or **Blelloch** scan algorithms. This is crucial for GPU computing (CUDA/OpenCL) or utilizing SIMD/multi-threading on large datasets.
 
 
+
 ### Basic Parallel Approach (Work-Efficient)
 
 The **Blelloch Scan** algorithm consists of two phases:
 
-```mermaid
-graph TD
-    subgraph Up-Sweep (Reduce Phase)
-    A1((x1)) --- S1[+]
-    A2((x2)) --- S1
-    A3((x3)) --- S2[+]
-    A4((x4)) --- S2
-    S1 --- S3[+]
-    S2 --- S3
-    S3 --> Root((Sum))
-    end
-    
-    subgraph Down-Sweep (Distribute Phase)
-    Root -.-> D1[+]
-    Root -.-> D2[+]
-    D1 -.-> L1((P1))
-    D1 -.-> L2((P2))
-    D2 -.-> L3((P3))
-    D2 -.-> L4((P4))
-    end
-```
+![Parallel Scan Tree](../resource/images/parallel_scan_tree.png)
+
 
 1.  **Up-Sweep (Reduce)**: Build a tree of partial sums. Complexity $O(N)$.
 2.  **Down-Sweep**: Traverse the tree to distribute values. Complexity $O(N)$.

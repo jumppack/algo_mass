@@ -18,22 +18,9 @@ If you just look at them one by one every time I ask, it takes a long time. You 
 Instead of counting every time, you make a **Magic Notebook**. 
 In this notebook, you write down the total number of coins from the *start* up to *that* piggy bank.
 
-```mermaid
-graph LR
-    A[Start] --> B(Bank 1: 2 coins)
-    B --> C(Bank 2: 3 coins)
-    C --> D(Bank 3: 1 coin)
-    D --> E(Bank 4: 5 coins)
-    
-    subgraph Notebook [The Magic Notebook (Running Total)]
-    B -.-> N1[Page 1: 2]
-    C -.-> N2[Page 2: 5]
-    D -.-> N3[Page 3: 6]
-    E -.-> N4[Page 4: 11]
-    end
-    
-    style Notebook fill:#f9f,stroke:#333,stroke-width:2px
-```
+
+![Magic Notebook Flowchart](../resource/images/eli5_flowchart.png)
+
 
 1. First bank has 2. Total so far: **2**. (Write 2)
 2. Next has 3. Total is 2 + 3 = **5**. (Write 5)

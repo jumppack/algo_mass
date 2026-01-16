@@ -1,34 +1,51 @@
-# Implementation Plan - Algorithm Learning Journey Refinement
+# Implementation Plan - Visuals & Practice Expansion
 
 ## Goal Description
-Enhance the educational value of the "Prefix Suffix Algorithms" section by providing tiered knowledge resources and industry-standard file naming for practice problems.
+Respond to user feedback by replacing Mermaid code blocks with actual generated images in knowledge files and expanding the practice section with key prefix sum problems.
 
 ## User Review Required
-- None at this stage.
+- None.
 
 ## Proposed Changes
 
-### Prefix Suffix Algorithms - Knowledge
-#### [NEW] [knowledge/level1_eli5.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level1_eli5.md)
-- "Explain Like I'm 5": Using simple analogies (like stacks of blocks or running totals) to explain the concept.
+### Knowledge - Visuals
+#### [MODIFY] [knowledge/level1_eli5.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level1_eli5.md)
+- Replace Mermaid flowchart with `eli5_flowchart.png`.
 
-#### [NEW] [knowledge/level2_intermediate.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level2_intermediate.md)
-- Standard technical explanation: Definitions, math formulas, time/space complexity analysis, and standard use cases. (Refactor of existing `concepts.md`).
+#### [MODIFY] [knowledge/level2_intermediate.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level2_intermediate.md)
+- Replace Block-Beta diagram with `array_visualization.png`.
+- Replace XYChart with `complexity_chart.png`.
 
-#### [NEW] [knowledge/level3_expert.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level3_expert.md)
-- In-depth analysis: Memory access patterns, potential for parallelization (Parallel Scan), SIMD usage, application in advanced data structures (Fenwick Trees/Segment Trees), and differences in mutable vs immutable scenarios.
+#### [MODIFY] [knowledge/level3_expert.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/level3_expert.md)
+- Replace Graph TD with `parallel_scan_tree.png`.
 
-#### [DELETE] [knowledge/concepts.md](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/knowledge/concepts.md)
-- Replaced by the tiered files.
+#### [NEW] Images in `resource/images/`
+- `eli5_flowchart.png`
+- `array_visualization.png`
+- `complexity_chart.png`
+- `parallel_scan_tree.png`
 
-### Prefix Suffix Algorithms - Practice
-#### [RENAME] `solution.py` -> `find_pivot_index.py`
-- Renaming to match LeetCode #724 "Find Pivot Index".
+### Practice - New Problems
+#### [NEW] [find_pivot_index.py/.js](file:///c:/Users/kaery/Desktop/Algorithms/prefix suffix sum/prefix_suffix_algorithms/practice/find_pivot_index.py) (Already exists, just noting context)
 
-#### [RENAME] `solution.js` -> `find_pivot_index.js`
-- Renaming to match LeetCode #724.
+#### [NEW] `range_sum_query_immutable.py` & `.js`
+- **Problem**: Calculate sum of elements in range [L, R] multiple times.
+- **Concept**: Basic Prefix Sum class structure.
+
+#### [NEW] `subarray_sum_equals_k.py` & `.js`
+- **Problem**: Total continuous subarrays whose sum equals k.
+- **Concept**: `HashMap` + `Prefix Sum` (Frequency counting).
+
+#### [NEW] `contiguous_array.py` & `.js`
+- **Problem**: Max length of contiguous subarray with equal number of 0s and 1s.
+- **Concept**: Transform 0 to -1, then finding max length subarray with sum 0 (`HashMap` storing first occurrence).
+
+#### [NEW] `product_except_self.py` & `.js`
+- **Problem**: Product of array except self without division.
+- **Concept**: Prefix Product + Suffix Product arrays (or O(1) space optimization).
 
 ## Verification Plan
 ### Manual Verification
-- Verify file existence and content.
-- Check `ai_brain` for synced artifacts.
+- Check all markdown files render images correctly.
+- Verify solution files exist and are named correctly.
+- Run `git status` to ensure all new files are staged.

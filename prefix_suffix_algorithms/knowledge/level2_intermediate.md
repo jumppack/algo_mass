@@ -21,24 +21,7 @@ $$Sum(L, R) = P[R] - P[L-1]$$
 *(Handle boundary condition where $L=0$ typically by checking if $L>0$ or using a padded array).*
 
 ### Visualization
-```mermaid
-block-beta
-columns 6
-  space:6
-  block:ArrayA
-    columns 5
-    A0["A[0]"] A1["A[1]"] A2["A[L]..."] A3["...A[R]"] A4["...A[n]"]
-  end
-  space:6
-  block:ArrayP
-    columns 5
-    P0["P[0]"] P1["P[1]"] P2["P[L]..."] P3["P[R]"] P4["P[n]"]
-  end
-  P3 -- "Sum(0...R)" --> Result
-  P2 -- "Sum(0...L-1)" --> Subtract
-  Result --> Subtract
-  Subtract -- "Result: Sum(L...R)" --> Final
-```
+![Array Visualization](../resource/images/array_visualization.png)
 
 ## 3. Complexity Analysis
 
@@ -48,14 +31,8 @@ columns 6
 | **Range Query** | $O(1)$ | $O(1)$ |
 
 ### Performance Comparison
-```mermaid
-xychart-beta
-    title "Query Time: Naive vs Prefix Sum"
-    x-axis [10, 100, 1000, 10000]
-    y-axis "Operations" 0 --> 10000
-    line [10, 100, 1000, 10000] text "Naive O(N)"
-    line [1, 1, 1, 1] text "Prefix Sum O(1)"
-```
+![Complexity Chart](../resource/images/complexity_chart.png)
+
 
 Without this technique, a range sum query would take $O(N)$ in the worst case (summing elements one by one). If you have $Q$ queries, the naive approach takes $O(Q \cdot N)$, whereas the prefix sum approach takes $O(N + Q)$. For large $Q$, this is a massive optimization.
 

@@ -4,21 +4,28 @@
     - [x] Initialize Git repository <!-- id: 1 -->
     - [x] Configure Git email (`karam.mehtausa@gmail.com`) <!-- id: 2 -->
     - [x] Create `ai_brain` folder and sync artifacts <!-- id: 14 -->
-    - [x] Manual Remote Creation (User notified) <!-- id: 3 -->
+    - [x] Install GitHub CLI (`gh`) <!-- id: 24 -->
+    - [x] `gh auth login` (User completed) <!-- id: 25 -->
+    - [x] Create public GitHub repo `algo_mass` <!-- id: 3 -->
     - [x] Create `README.md` <!-- id: 4 -->
     - [x] Initial commit <!-- id: 5 -->
+    - [x] Push to `algo_mass` <!-- id: 23 -->
 - [x] **Phase 2: Folder Structure & Workflow** <!-- id: 6 -->
     - [x] Create `prefix_suffix_algorithms` folder <!-- id: 7 -->
     - [x] Create subfolders: `knowledge`, `resource`, `practice` <!-- id: 8 -->
 - [x] **Phase 3: Execution - Prefix Suffix Algorithms** <!-- id: 9 -->
     - [x] **Knowledge Refinement**: <!-- id: 15 -->
-        - [x] Create `level1_eli5.md` (5-year-old explanation) <!-- id: 16 -->
-        - [x] Create `level2_intermediate.md` (Academic/Standard) <!-- id: 17 -->
-        - [x] Create `level3_expert.md` (Senior Engineer/Deep Dive) <!-- id: 18 -->
-    - [x] **Practice Refinement**: <!-- id: 19 -->
-        - [x] Rename python solution to `find_pivot_index.py` <!-- id: 20 -->
-        - [x] Rename JS solution to `find_pivot_index.js` <!-- id: 21 -->
-    - [x] **Practice**: Create Python solution for beginner problem <!-- id: 11 -->
-    - [x] **Practice**: Create JavaScript solution for beginner problem <!-- id: 12 -->
+        - [x] **Enhancement**: Replace Mermaid with Generated Images <!-- id: 27 -->
+            - [x] Generate `eli5_flowchart.png` <!-- id: 28 -->
+            - [x] Generate `array_visualization.png` <!-- id: 29 -->
+            - [x] Generate `complexity_chart.png` <!-- id: 30 -->
+            - [x] Generate `parallel_scan_tree.png` <!-- id: 31 -->
+            - [x] Update MD files with image links <!-- id: 32 -->
+    - [x] **Practice Expansion**: <!-- id: 33 -->
+        - [x] Create `find_pivot_index.py` & `.js` (LC 724) <!-- id: 20 -->
+        - [x] Create `range_sum_query_immutable.py` & `.js` (LC 303) <!-- id: 34 -->
+        - [x] Create `subarray_sum_equals_k.py` & `.js` (LC 560) <!-- id: 35 -->
+        - [x] Create `contiguous_array.py` & `.js` (LC 525) <!-- id: 36 -->
+        - [x] Create `product_except_self.py` & `.js` (LC 238) <!-- id: 37 -->
     - [x] Sync updated artifacts to `ai_brain` <!-- id: 22 -->
     - [x] Verify setup and confirm <!-- id: 13 -->
