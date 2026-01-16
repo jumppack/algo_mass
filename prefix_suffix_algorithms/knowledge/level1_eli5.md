@@ -1,5 +1,7 @@
 # Level 1: The Magic Notebook (ELI5)
 
+![Piggy Bank Prefix Sum](../resource/images/piggy_bank_prefix_sum.png)
+
 Imagine you have a row of piggy banks on a shelf. Each piggy bank has some coins in it.
 
 `[ 2 coins, 3 coins, 1 coin, 5 coins ]`
@@ -10,13 +12,32 @@ Now, suppose I keep asking you questions like:
 
 If you just look at them one by one every time I ask, it takes a long time. You have to count: "2 plus 3 is 5... plus 1 is 6..." for every single question!
 
+
 ## The Magic Trick (Prefix Sum)
 
 Instead of counting every time, you make a **Magic Notebook**. 
 In this notebook, you write down the total number of coins from the *start* up to *that* piggy bank.
 
+```mermaid
+graph LR
+    A[Start] --> B(Bank 1: 2 coins)
+    B --> C(Bank 2: 3 coins)
+    C --> D(Bank 3: 1 coin)
+    D --> E(Bank 4: 5 coins)
+    
+    subgraph Notebook [The Magic Notebook (Running Total)]
+    B -.-> N1[Page 1: 2]
+    C -.-> N2[Page 2: 5]
+    D -.-> N3[Page 3: 6]
+    E -.-> N4[Page 4: 11]
+    end
+    
+    style Notebook fill:#f9f,stroke:#333,stroke-width:2px
+```
+
 1. First bank has 2. Total so far: **2**. (Write 2)
 2. Next has 3. Total is 2 + 3 = **5**. (Write 5)
+
 3. Next has 1. Total is 5 + 1 = **6**. (Write 6)
 4. Next has 5. Total is 6 + 5 = **11**. (Write 11)
 
