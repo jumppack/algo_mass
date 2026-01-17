@@ -21,11 +21,15 @@
             - [x] Generate `complexity_chart.png` <!-- id: 30 -->
             - [x] Generate `parallel_scan_tree.png` <!-- id: 31 -->
             - [x] Update MD files with image links <!-- id: 32 -->
+        - [x] **Elaborate Expert Knowledge**: <!-- id: 38 -->
+            - [x] Improve `level3_expert.md` with detailed explanations and resources <!-- id: 39 -->
     - [x] **Practice Expansion**: <!-- id: 33 -->
-        - [x] Create `find_pivot_index.py` & `.js` (LC 724) <!-- id: 20 -->
-        - [x] Create `range_sum_query_immutable.py` & `.js` (LC 303) <!-- id: 34 -->
-        - [x] Create `subarray_sum_equals_k.py` & `.js` (LC 560) <!-- id: 35 -->
-        - [x] Create `contiguous_array.py` & `.js` (LC 525) <!-- id: 36 -->
-        - [x] Create `product_except_self.py` & `.js` (LC 238) <!-- id: 37 -->
-    - [x] Sync updated artifacts to `ai_brain` <!-- id: 22 -->
-    - [x] Verify setup and confirm <!-- id: 13 -->
+        - [x] Create practice files (initial versions) <!-- id: 20 -->
+        - [x] **Refine Practice Files** (Comments, Intuition, Links): <!-- id: 40 -->
+            - [x] Refine `find_pivot_index` (Py & JS) <!-- id: 41 -->
+            - [x] Refine `range_sum_query_immutable` (Py & JS) <!-- id: 42 -->
+            - [x] Refine `subarray_sum_equals_k` (Py & JS) <!-- id: 43 -->
+            - [x] Refine `contiguous_array` (Py & JS) <!-- id: 44 -->
+            - [x] Refine `product_except_self` (Py & JS) <!-- id: 45 -->
+    - [ ] Sync updated artifacts to `ai_brain` <!-- id: 22 -->
+    - [ ] Verify setup and confirm <!-- id: 13 -->
