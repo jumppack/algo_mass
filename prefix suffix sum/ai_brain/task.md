@@ -1,0 +1,35 @@
+# Algorithm Learning Journey - Setup & Prefix Suffix Algorithms
+
+- [x] **Phase 1: Repository Setup** <!-- id: 0 -->
+    - [x] Initialize Git repository <!-- id: 1 -->
+    - [x] Configure Git email (`karam.mehtausa@gmail.com`) <!-- id: 2 -->
+    - [x] Create `ai_brain` folder and sync artifacts <!-- id: 14 -->
+    - [x] Install GitHub CLI (`gh`) <!-- id: 24 -->
+    - [x] `gh auth login` (User completed) <!-- id: 25 -->
+    - [x] Create public GitHub repo `algo_mass` <!-- id: 3 -->
+    - [x] Create `README.md` <!-- id: 4 -->
+    - [x] Initial commit <!-- id: 5 -->
+    - [x] Push to `algo_mass` <!-- id: 23 -->
+- [x] **Phase 2: Folder Structure & Workflow** <!-- id: 6 -->
+    - [x] Create `prefix_suffix_algorithms` folder <!-- id: 7 -->
+    - [x] Create subfolders: `knowledge`, `resource`, `practice` <!-- id: 8 -->
+- [x] **Phase 3: Execution - Prefix Suffix Algorithms** <!-- id: 9 -->
+    - [x] **Knowledge Refinement**: <!-- id: 15 -->
+        - [x] **Enhancement**: Replace Mermaid with Generated Images <!-- id: 27 -->
+            - [x] Generate `eli5_flowchart.png` <!-- id: 28 -->
+            - [x] Generate `array_visualization.png` <!-- id: 29 -->
+            - [x] Generate `complexity_chart.png` <!-- id: 30 -->
+            - [x] Generate `parallel_scan_tree.png` <!-- id: 31 -->
+            - [x] Update MD files with image links <!-- id: 32 -->
+        - [x] **Elaborate Expert Knowledge**: <!-- id: 38 -->
+            - [x] Improve `level3_expert.md` with detailed explanations and resources <!-- id: 39 -->
+    - [x] **Practice Expansion**: <!-- id: 33 -->
+        - [x] Create practice files (initial versions) <!-- id: 20 -->
+        - [x] **Refine Practice Files** (Comments, Intuition, Links): <!-- id: 40 -->
+            - [x] Refine `find_pivot_index` (Py & JS) <!-- id: 41 -->
+            - [x] Refine `range_sum_query_immutable` (Py & JS) <!-- id: 42 -->
+            - [x] Refine `subarray_sum_equals_k` (Py & JS) <!-- id: 43 -->
+            - [x] Refine `contiguous_array` (Py & JS) <!-- id: 44 -->
+            - [x] Refine `product_except_self` (Py & JS) <!-- id: 45 -->
+    - [ ] Sync updated artifacts to `ai_brain` <!-- id: 22 -->
+    - [ ] Verify setup and confirm <!-- id: 13 -->
