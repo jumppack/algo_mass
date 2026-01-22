@@ -23,7 +23,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-function findPivotIndex(nums) {
+export default function findPivotIndex(nums) {
     // Step 1: Calculate total sum
     // reduce is a clean way to sum an array in JS
     const totalSum = nums.reduce((acc, curr) => acc + curr, 0);
@@ -47,14 +47,3 @@ function findPivotIndex(nums) {
     return -1;
 }
 
-// ---------------------------------------------------
-// Test Cases
-// ---------------------------------------------------
-const test1 = [1, 7, 3, 6, 5, 6];
-console.log(`Test 1: [${test1}] -> ${findPivotIndex(test1)} (Expected: 3)`);
-
-const test2 = [1, 2, 3];
-console.log(`Test 2: [${test2}] -> ${findPivotIndex(test2)} (Expected: -1)`);
-
-const test3 = [2, 1, -1];
-console.log(`Test 3: [${test3}] -> ${findPivotIndex(test3)} (Expected: 0)`);

@@ -31,7 +31,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-function findMaxLength(nums) {
+export default function findMaxLength(nums) {
     let maxLen = 0;
     let currSum = 0;
 
@@ -63,11 +63,14 @@ function findMaxLength(nums) {
 // ---------------------------------------------------
 // Test Cases
 // ---------------------------------------------------
-const test1 = [0, 1];
-console.log(`Test 1: [${test1}] -> ${findMaxLength(test1)} (Expected: 2)`);
+// const test1 = [0, 1];
+// console.log(`Test 1: [${test1}] -> ${findMaxLength(test1)} (Expected: 2)`);
 
-const test2 = [0, 1, 0];
-console.log(`Test 2: [${test2}] -> ${findMaxLength(test2)} (Expected: 2)`);
+// const test2 = [0, 1, 0];
+// console.log(`Test 2: [${test2}] -> ${findMaxLength(test2)} (Expected: 2)`);
 
-const test3 = [0, 1, 0, 1];
-console.log(`Test 3: [${test3}] -> ${findMaxLength(test3)} (Expected: 4)`);
+// const test3 = [0, 1, 0, 1];
+// console.log(`Test 3: [${test3}] -> ${findMaxLength(test3)} (Expected: 4)`);
+
+// const test4 = [1, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 1];
+// console.log(`Test 4: [${test4}] -> ${findMaxLength(test4)} (Expected: 14)`);

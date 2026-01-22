@@ -31,7 +31,7 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-function productExceptSelf(nums) {
+export default function productExceptSelf(nums) {
     const n = nums.length;
     // Initialize answer array
     const answer = new Array(n).fill(1);
@@ -55,12 +55,3 @@ function productExceptSelf(nums) {
 
     return answer;
 }
-
-// ---------------------------------------------------
-// Test Cases
-// ---------------------------------------------------
-const test1 = [1, 2, 3, 4];
-console.log(`Test 1: [${test1}] -> ${productExceptSelf(test1)}`); // Expected: [24, 12, 8, 6]
-
-const test2 = [-1, 1, 0, -3, 3];
-console.log(`Test 2: [${test2}] -> ${productExceptSelf(test2)}`); // Expected: [0, 0, 9, 0, 0]
