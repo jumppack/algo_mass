@@ -1,0 +1,25 @@
+[
+  { "name": "Apple", "price": 1.50, "hasDiscount": false, "discountPrice": null, "category": "fruit" },
+  { "name": "Banana", "price": 0.50, "hasDiscount": true, "discountPrice": 0.40, "category": "fruit" },
+  { "name": "Orange", "price": 1.20, "hasDiscount": false, "discountPrice": null, "category": "fruit" },
+  { "name": "Mango", "price": 2.50, "hasDiscount": true, "discountPrice": 2.00, "category": "fruit" },
+  { "name": "Strawberry", "price": 3.00, "hasDiscount": false, "discountPrice": null, "category": "fruit" },
+  { "name": "Blueberry", "price": 4.00, "hasDiscount": true, "discountPrice": 3.50, "category": "fruit" },
+  { "name": "Pineapple", "price": 3.50, "hasDiscount": false, "discountPrice": null, "category": "fruit" },
+
+  { "name": "Carrot", "price": 1.00, "hasDiscount": false, "discountPrice": null, "category": "vegetable" },
+  { "name": "Broccoli", "price": 2.00, "hasDiscount": true, "discountPrice": 1.50, "category": "vegetable" },
+  { "name": "Spinach", "price": 1.80, "hasDiscount": false, "discountPrice": null, "category": "vegetable" },
+  { "name": "Potato", "price": 0.80, "hasDiscount": true, "discountPrice": 0.60, "category": "vegetable" },
+  { "name": "Onion", "price": 1.20, "hasDiscount": false, "discountPrice": null, "category": "vegetable" },
+  { "name": "Tomato", "price": 1.50, "hasDiscount": true, "discountPrice": 1.20, "category": "vegetable" },
+  { "name": "Cucumber", "price": 1.00, "hasDiscount": false, "discountPrice": null, "category": "vegetable" },
+
+  { "name": "Almond", "price": 6.00, "hasDiscount": false, "discountPrice": null, "category": "nut" },
+  { "name": "Walnut", "price": 5.50, "hasDiscount": true, "discountPrice": 4.50, "category": "nut" },
+  { "name": "Cashew", "price": 7.00, "hasDiscount": false, "discountPrice": null, "category": "nut" },
+  { "name": "Pistachio", "price": 8.00, "hasDiscount": true, "discountPrice": 6.50, "category": "nut" },
+  { "name": "Pecan", "price": 6.50, "hasDiscount": false, "discountPrice": null, "category": "nut" },
+  { "name": "Macadamia", "price": 10.00, "hasDiscount": true, "discountPrice": 8.50, "category": "nut" },
+  { "name": "Hazelnut", "price": 5.00, "hasDiscount": false, "discountPrice": null, "category": "nut" }
+]
