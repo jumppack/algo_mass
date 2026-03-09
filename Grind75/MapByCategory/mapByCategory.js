@@ -21,7 +21,7 @@ console.log(count(x.get('vegetable')))
 console.log(count(x.get('nut')));
 
 
-console.log(x.get('fruit').filter( (item) => (item.name.lastIndexOf('b'))> -1))
+console.log(x.get('fruit').filter( (item) => item.name.toLowerCase().includes('b')))
 
 
 
