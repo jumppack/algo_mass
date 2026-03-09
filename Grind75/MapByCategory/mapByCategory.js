@@ -23,8 +23,6 @@ console.log(count(x.get('nut')));
 
 console.log(x.get('fruit').filter( (item) => item.name.toLowerCase().includes('b')))
 
-
-
 function count(arr) {
     // let count = 0;
     // arr.forEach( _ => count += 1);
