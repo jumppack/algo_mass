@@ -1,0 +1,15 @@
+# AI Agent folders
+.agent/
+.agent
+ai_brain/
+ai_brain
+
+# Mac OS
+.DS_Store
+
+# Node/NPM
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
