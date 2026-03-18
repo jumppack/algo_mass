@@ -33,10 +33,11 @@ console.log("--- 1. Global Execution Context (GEC) ---");
  * There can only be exactly ONE global execution context in a program.
  */
 var globalMessage = "I am global";
-console.log("Are we in the global context?", this === globalThis); 
-// Note: In strict mode (`"use strict"`), or inside ES Modules (which are strict by default), 
-// top-level `this` behaves a bit differently (often `undefined` in Node.js modules), 
-// but the Execution Context itself is still the Global Execution Context.
+console.log("Are we in the global context?", this === globalThis);  // Note: this is actually 'false' in Node.js!
+// In a browser, top-level `this` refers to `window` (which maps to `globalThis`), yielding true.
+// However, in Node.js CommonJS files, the top-level `this` actually refers to `module.exports`, yielding false!
+// Inside ES Modules (using strict mode by default), the top-level `this` is unconditionally `undefined`.
+// Despite this quirk with 'this', the overall execution environment is still the Global Execution Context.
 
 
 
